@@ -1,0 +1,2 @@
+var concat = require('concat-files'); 
+var compile_to = './dist/final_bundle.js' concat(['./dist/main.js', './dist/runtime.js', './dist/polyfills.js'], compile_to, function (err) { if (err) throw err console.log('Compiled to , ', compile_to); });
